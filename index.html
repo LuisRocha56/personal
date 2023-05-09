@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 8</title>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <ion-app>
+      <ion-menu content-id="pagina-principal" type="reveal">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Menú presupuesto</ion-title>
+          </ion-toolbar>
+        </ion-header>
+
+        <ion-content class="ion-padding">
+          <ion-list>
+            <ion-list-header>
+              Navegación
+            </ion-list-header>
+
+            <ion-menu-toggle>
+              <ion-item button>
+                <ion-icon name="home-outline"></ion-icon>
+                  Regresar
+              </ion-item>
+            </ion-menu-toggle>
+          </ion-list>
+        </ion-content>
+      </ion-menu>
+
+      <div class="ion-page" id="pagina-principal">
+        <ion-header>
+          <ion-toolbar>
+            <ion-buttons slot="start">
+              <ion-menu-button fill="clear"></ion-menu-button>
+            </ion-buttons>
+            <ion-title>Presupuesto</ion-title>
+          </ion-toolbar>
+        </ion-header>
+
+        <ion-content class="ion-padding">   
+          <div class="fila">
+              <ion-label for="gasto" position="floating">Nombre del articulo: </ion-label>
+              <ion-input type="text" id="gasto" placeholder="Ingresa nombre articulo"></ion-input>
+          </div>
+          
+        <div class="fila">
+          <ion-label position="floating">Precio de articulo:</ion-label>
+          <ion-input type="number" id="monto" placeholder="Ingresa precio articulo"></ion-input>
+        </div>  
+
+        <div>
+          <ion-button class="fila" onclick="guardar()">Guardar</ion-button>
+        </div>
+
+        <p id="mostrarArreglo"></p>
+
+      </ion-content>
+      </div>
+        
+      </ion-app>
+</body>
+
+<script src="imprimir.js"></script>
+
+</html>

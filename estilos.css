@@ -1,0 +1,53 @@
+body {
+    background-color: #ffd700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
+
+button {
+    display: block;
+    margin-top: 10px;
+    border: none;
+    background-color: #dc143c;
+    color: #00ffff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+@media screen and (min-width: 700px){
+    button {
+    width: 25%
+    }
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.clase1 {
+    color: #000080;
+}
+
+.fila{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #8b0000;
+}
+
+input {
+    margin-top: 10px;
+    background: #20b2aa;
+    padding: 10px;
+    font-size: 20px;
+    color: #4b0082;
+}
+
+input, label {
+    font-size: 25px;
+}
